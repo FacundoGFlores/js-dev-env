@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Javascript dev environment",
   "scripts": {
+    "start": "node build/server.js"
   },
   "author": "Flores Facundo",
   "license": "MIT",

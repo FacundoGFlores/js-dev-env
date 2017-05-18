@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Javascript dev environment",
   "scripts": {
-    "prestart": "node build/preStart.js",
+    "prestart": "babel-node build/preStart.js",
     "start": "npm-run-all --parallel security-check open:src",
     "open:src": "node build/server.js",
     "security-check": "nsp check"

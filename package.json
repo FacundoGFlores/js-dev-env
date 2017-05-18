@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Javascript dev environment",
   "scripts": {
-    "start": "node build/server.js"
+    "prestart": "node build/preStart.js",
+    "start": "node build/server.js",
+    "security-check": "nsp check"
   },
   "author": "Flores Facundo",
   "license": "MIT",

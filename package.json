@@ -4,7 +4,8 @@
   "description": "Javascript dev environment",
   "scripts": {
     "prestart": "node build/preStart.js",
-    "start": "node build/server.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "node build/server.js",
     "security-check": "nsp check"
   },
   "author": "Flores Facundo",
